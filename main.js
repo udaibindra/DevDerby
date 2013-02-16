@@ -3,6 +3,7 @@ var ctx = canvas.getContext('2d');
 
 ctx.strokeStyle = '#367dbc';
 ctx.translate(-.5,-.5);
+ctx.fill();
 
 
 
