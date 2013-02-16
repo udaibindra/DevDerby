@@ -1,8 +1,10 @@
 var canvas = document.getElementByTagName('canvas');
 var ctx = canvas.getContext('2d');
 
+ctx.beginPath();
 ctx.strokeStyle = '#367dbc';
 ctx.translate(-.5,-.5);
+ctx.stroke();
 
 canvas.addEventListener('touchstart', function (event) {
   for (var i = 0; i < event.touches.length; i ++) {
