@@ -2,7 +2,7 @@ var canvas = document.getElementByTagName('canvas');
 var ctx = canvas.getContext('2d');
 
 ctx.strokeStyle = '#367dbc';
-ctx.translate(-.5,-.5);
+ctx.translate(20,20);
 
 canvas.addEventListener('touchstart', function (event) {
   for (var i = 0; i < event.touches.length; i ++) {
