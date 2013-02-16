@@ -2,8 +2,7 @@ var canvas = document.getElementByTagName('canvas');
 var ctx = canvas.getContext('2d');
 
 ctx.strokeStyle = '#367dbc';
-ctx.translate(-.5,-.5);
-ctx.fill();
+ctx.fillRect(10,10,100,100)
 
 
 
