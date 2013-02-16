@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, height = device-height, initial-scale=1.0, maximum-scale=5.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Multi-touch demo</title>
     <link rel="stylesheet" href="main.css">
@@ -11,35 +11,6 @@
     <h1>Multi-touch demo</h1>
     <canvas height="device-height/2" width="device-width/2" style="border:1px solid #ff0000;"></canvas>
 
-    <script type="text/javascript">
-    var canvas = document.getElementByTagName('canvas');
-var ctx = canvas.getContext('2d');
-
-ctx.strokeStyle = '#367dbc';
-
-ctx.fillRect(25,25,100,100);
-  ctx.clearRect(45,45,60,60);
-  ctx.strokeRect(50,50,50,50);
-
-
-canvas.addEventListener('touchstart', function (event) {
-  for (var i = 0; i < event.touches.length; i ++) {
-    var touch = event.touches[i];
-    ctx.beginPath();
-    ctx.arc(touch.pageX, touch.pageY, 20, 0, 2*Math.PI, true);
-    ctx.fill();
-    ctx.stroke();
-  }
-}, false);
-
-canvas.addEventListener("touchmove", function (event) {
-  for (var i = 0; i < event.touches.length; i ++) {
-    ctx.beginPath();
-    ctx.translate(touch.pageX,touch.pageY);
-    ctx.fill();
-      ctx.stroke();
-  }
-}, false);
-canvas.addEventListener("touchend", function () {}, false);</script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
