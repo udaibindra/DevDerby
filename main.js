@@ -18,7 +18,7 @@ canvas.addEventListener('touchstart', function (event) {
   }
 }, false);
 
-canvas.addEventListener("touchmove", function (event) {
+canvas.addEventListener('touchmove', function (event) {
 	for (var i = 0; i < event.touches.length; i ++) {
 		ctx.beginPath();
 		ctx.translate(touch.pageX,touch.pageY);
