@@ -1,8 +1,15 @@
 var canvas = document.getElementByTagName('canvas');
 var ctx = canvas.getContext('2d');
 
-ctx.strokeStyle = '#367dbc';
-ctx.translate(20,20);
+ctx.fillStyle = '#FD0';
+  ctx.fillRect(0,0,75,75);
+  ctx.fillStyle = '#6C0';
+  ctx.fillRect(75,0,75,75);
+  ctx.fillStyle = '#09F';
+  ctx.fillRect(0,75,75,75);
+  ctx.fillStyle = '#F30';
+  ctx.fillRect(75,75,150,150);
+  ctx.fillStyle = '#FFF';
 
 canvas.addEventListener('touchstart', function (event) {
   for (var i = 0; i < event.touches.length; i ++) {
