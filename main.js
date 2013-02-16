@@ -4,6 +4,7 @@ var ctx = canvas.getContext('2d');
 ctx.beginPath();
 ctx.strokeStyle = '#367dbc';
 ctx.translate(-.5,-.5);
+ctx.fill();
 ctx.stroke();
 
 canvas.addEventListener('touchstart', function (event) {
