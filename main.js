@@ -2,8 +2,10 @@ var canvas = document.getElementByTagName('canvas');
 var ctx = canvas.getContext('2d');
 
 ctx.strokeStyle = '#367dbc';
-ctx.fillRect(10,10,100,100)
 
+ctx.fillRect(25,25,100,100);
+  ctx.clearRect(45,45,60,60);
+  ctx.strokeRect(50,50,50,50);
 
 
 canvas.addEventListener('touchstart', function (event) {
